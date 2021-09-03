@@ -1,0 +1,135 @@
+.page-footer {
+	background-color: #1c242a;
+	padding: 60px 55px;
+	@media (max-width: 676px) {
+		padding: 30px 20px;
+		}
+	&__content {
+		display: flex;
+		@media (max-width: 676px) {
+			display: block;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__column {
+		&:first-child{
+			flex: 0 1 180px;
+			min-width: 180px;
+		}
+		&--full{
+			flex: 1 1 auto;
+		}
+	}
+	
+
+	&__logo {
+		display: inline-block;
+		margin-bottom: 25px;
+		img{
+			max-width: 100%;
+		}
+		@media (max-width: 676px) {
+			margin-bottom: 0;	
+		}
+	}
+
+	&__copyright {
+		color: #bb9c66;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 21px;
+		@media (max-width: 676px) {
+			margin-top: 25px;	
+		}
+	}
+
+	&__menu {
+		padding: 0 30px;
+		@media (max-width: 676px) {
+			margin-bottom: 20px;	
+		}
+	}
+
+	&__contacts{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-top: 10px;
+		@media (max-width: 676px) {
+		align-items: center;
+		}
+	}
+
+	&__phone {
+		display: flex;
+		align-items: flex-start;
+		color: #bb9c66;
+		font-family: "BravoRGRegular";
+		font-size: 50px;
+		line-height: 50px;
+		font-weight: 400;
+		text-transform: uppercase;
+		white-space: nowrap;
+		text-align: center;
+		sup{
+			font-size: 21px;
+			line-height: 21px;
+		}
+		@media (max-width: 920px) {
+			font-size: 30px;
+			line-height: 30px;
+		}
+	}
+
+	&__feedback {
+		color: #bb9c66;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 21px;			
+		padding-left: 15px;
+		background: url(../img/footer/icons/feedback-icon.svg) left no-repeat;
+		span{
+			border-bottom: 1px dashed #bb9c66;
+		}
+	}
+}
+
+
+.footer-menu {
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		@media (max-width: 676px) {
+			justify-content: center;
+		}
+	}
+
+	&__item {
+		margin-right: 15px;
+		margin-top: 10px;
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+
+	&__link {
+		color: #ffffff;
+		font-family: "pfdin";
+		font-size: 14px;
+		line-height: 21px;
+		text-transform: uppercase;
+		letter-spacing: 1.4px;
+		@media (min-width: 992px) {
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		@media (max-width: $md3+px) {
+			font-size: 20px;
+		}
+	}
+}
+

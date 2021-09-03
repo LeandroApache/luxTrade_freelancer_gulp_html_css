@@ -1,0 +1,153 @@
+.actual {
+	padding-bottom: 75px;
+	&__container {
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -22px;
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
+
+	&__column {
+		flex: 0 1 50%;
+		margin-bottom: 50px;
+		padding: 0 22px;
+		&:last-child {
+		flex: 1 1 100%;
+		margin-bottom: 0px;
+		}
+		@media (max-width: 676px) {
+		margin-bottom: 30px;
+		}
+	}
+
+	&__block {
+	}
+
+	&__title {
+		margin-bottom: 30px;
+	}
+
+	&__content {
+	}
+
+	&__item {
+		margin-bottom: 35px;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+
+	&__date{
+		display: block;
+		margin-bottom: 5px;
+		color: #bb9c66;
+		font-size: 12px;
+		font-weight: 400;
+	}
+
+	&__subtitle {
+		display: block;
+	font-weight: 700;
+	color: #3b3b3b;
+	text-decoration: underline;
+	}
+
+	&__text {
+	}
+}
+
+
+
+.title-actual {
+	display: flex;
+	align-items: center;
+	color: #000000;
+	font-family: "pfdin";
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: 3.5px;
+		span{
+			margin-right: 22px;
+			&:last-child {
+				margin-right: 0px;
+			}
+	}
+	@media (max-width: 767px) {
+		justify-content: center;
+	}
+}
+
+.subscribe {
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	&__content {
+		display: flex;
+		margin: 0 -22px;
+		@media (max-width: 500px) {
+			display: block;
+		}
+	}
+
+	&__column {
+		flex: 0 1 50%;
+		padding: 0 22px;
+		&:first-child {
+			@media (max-width: 500px) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	&__text {
+	}
+
+	&__form {
+	}
+}
+
+.form-subscribe {
+	display: flex;
+height: 50px;
+border: 3px solid #bb9c66;
+background-color: #ffffff;
+	&__input {
+		flex: 1 1 auto;
+	}
+	&__btn {
+		flex: 0 0 95px;
+		position: relative;
+		background-color: #fff;
+		&::before{
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			left: 0;
+			width: 1px;
+			height: 32px;
+			background-color: #bb9c66;
+		}
+		span{
+			padding-right: 30px;
+			color: #1c242a;
+			font-family: "pfdin";
+			font-size: 21px;
+			font-weight: 500;
+			line-height: 25.28px;
+			text-transform: uppercase;
+			letter-spacing: 2.12px;
+			background: url(../img/actual/icons/btn-icon.svg) right no-repeat;
+		}
+	}
+}
+
